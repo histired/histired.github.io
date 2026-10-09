@@ -3,44 +3,48 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Maple</title>
-<meta name="description" content="Maple, a personal voice assistant that runs on one person's desktop computer.">
+<title>histired</title>
+<meta name="description" content="Projects by histired.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main>
   <header>
-    <div class="mark">M</div>
-    <h1>Maple</h1>
+    <div class="mark">H</div>
+    <h1>histired</h1>
   </header>
+  <p class="intro">Projects and experiments.</p>
 
-  <p>Maple is a personal voice assistant that lives on one desktop computer as an animated
-  avatar. You talk to her or type to her, and she answers out loud. She can look things up
-  on the web, plan routes, do date and money maths, and, when asked, check a Google
-  Calendar or send an email.</p>
+  <h2>Projects</h2>
+  <div class="projects">
 
-  <div class="card">
-    <p><strong>Personal use only.</strong> Maple is not a service and is not offered to the
-    public. She runs entirely on her developer's own computer, using a language model that
-    also runs on that computer. There are no accounts to sign up for and nothing to
-    download here.</p>
+    <details class="project">
+      <summary>
+        <div class="mark">M</div>
+        <span class="name">Maple</span>
+        <span class="tag">a personal desktop voice assistant</span>
+        <span class="chev">&#9656;</span>
+      </summary>
+      <div class="body">
+        <div class="chips">
+          <span>C++ / raylib</span><span>Python</span><span>local LLM</span>
+          <span>voice cloning</span><span>Google APIs</span>
+        </div>
+        <p>An animated avatar that lives on the desktop and answers out loud: web search,
+        routes and places, calendar and email (each confirmed first), screen and clipboard
+        help, and date and money maths - all running on one PC with a local language model.</p>
+        <div class="links">
+          <a class="primary" href="maple/">About Maple</a>
+          <a href="maple/privacy.html">Privacy policy</a>
+        </div>
+      </div>
+    </details>
+
   </div>
 
-  <h2>Google account access</h2>
-  <p>Maple signs in to her developer's own Google account with Google's standard sign-in, to:</p>
-  <ul>
-    <li><strong>Google Calendar</strong>: read upcoming events (to answer "what's on
-    tomorrow?" and to give reminders) and add an event, but only after the user has seen
-    it and said yes.</li>
-    <li><strong>Gmail</strong>: send an email the user has seen and approved. Maple cannot
-    read any email.</li>
-  </ul>
-  <p>Nothing is written or sent without the user's explicit confirmation. How this data is
-  handled is described in the <a href="privacy.html">privacy policy</a>.</p>
-
-  <nav>
-    <a href="privacy.html">Privacy policy</a>
-  </nav>
+  <footer>
+    <p class="muted"><a href="https://github.com/histired">github.com/histired</a></p>
+  </footer>
 </main>
 </body>
 </html>

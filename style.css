@@ -28,3 +28,38 @@ a:hover { color: var(--n7); }
 nav { margin-top: 40px; display: flex; gap: 18px; font-size: 15px; }
 .muted { color: var(--n3); font-size: 14px; }
 code { background: var(--n2); padding: 1px 6px; border-radius: 6px; }
+
+/* The portfolio's project list: one foldout per project. */
+.intro { margin-bottom: 36px; }
+.projects { display: flex; flex-direction: column; gap: 12px; }
+details.project {
+  background: var(--n1); border: 1px solid var(--n3); border-radius: 14px; overflow: hidden;
+}
+details.project summary {
+  list-style: none; cursor: pointer; padding: 16px 20px;
+  display: flex; align-items: center; gap: 14px;
+}
+details.project summary::-webkit-details-marker { display: none; }
+details.project summary:hover { background: var(--n2); }
+details.project[open] summary { border-bottom: 1px solid var(--n3); }
+details.project summary .mark { width: 36px; height: 36px; font-size: 18px; border-radius: 10px; }
+details.project summary .name { font-weight: 700; color: var(--n6); }
+details.project summary .tag { color: var(--n4); font-size: 15px; }
+details.project summary .chev { margin-left: auto; color: var(--n4); transition: transform .15s; }
+details.project[open] summary .chev { transform: rotate(90deg); }
+details.project .body { padding: 14px 20px 18px; }
+details.project .body p { margin: 0 0 12px; }
+.links { display: flex; flex-wrap: wrap; gap: 10px; }
+.links a {
+  display: inline-block; padding: 7px 14px; border-radius: 10px; text-decoration: none;
+  background: var(--n2); color: var(--n6); border: 1px solid var(--n3);
+}
+.links a:hover { background: var(--n3); }
+.links a.primary { background: var(--n8); color: var(--n0); border-color: var(--n8); }
+.links a.primary:hover { background: var(--n7); }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 14px; }
+.chips span {
+  font-size: 13px; color: var(--n4); background: var(--n0); border: 1px solid var(--n3);
+  border-radius: 999px; padding: 2px 10px;
+}
+footer { margin-top: 48px; }
