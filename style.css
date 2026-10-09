@@ -45,7 +45,7 @@ details.project[open] summary { border-bottom: 1px solid var(--n3); }
 details.project summary .mark { width: 36px; height: 36px; font-size: 18px; border-radius: 10px; }
 details.project summary .name { font-weight: 700; color: var(--n6); }
 details.project summary .tag { color: var(--n4); font-size: 15px; }
-details.project summary .chev { margin-left: auto; color: var(--n4); transition: transform .15s; }
+details.project summary .chev { margin-left: auto; color: var(--n4); display: inline-block; transition: transform .15s; }
 details.project[open] summary .chev { transform: rotate(90deg); }
 details.project .body { padding: 14px 20px 18px; }
 details.project .body p { margin: 0 0 12px; }
